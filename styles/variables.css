@@ -7,5 +7,7 @@
   --bg-color:  #000028;
   --text-color: #FF0070;
   --accent-color: #F1B2CE;
-  --color-heading:#000028
+  --color-heading:#000028;
+  --color-bord:rgba(255 0 112 / 0.4);
+  --title-cover:#db00ff;
 }

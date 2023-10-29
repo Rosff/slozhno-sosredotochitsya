@@ -6,11 +6,13 @@
 .theme_light {
   --accent-color: #353430;
   --text-color: #ff8dcb;
+  --color-bord:rgba(50 49 45 / 0.4);
+  --color-title:#ffc2e6;
+  --shadow-color:#ff0070;
 }
 
 .page.theme_light {
   background-image: url(../images/cover-image-light.png);
-  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   /* сохраните этот селектор в приведённом виде.
@@ -27,7 +29,7 @@
 }
 
 .theme_light .header__theme-menu-button:hover {
-  border-color: rgba(50 49 45 / 0.4);
+  border-color: var(-color-bord);
 }
 
 .theme_light .header__theme-menu-button:focus-visible {
@@ -44,8 +46,8 @@
 }
 
 .theme_light .title {
-  color: #ffc2e6;
-  text-shadow: 4px 4px 0 #ff0070;
+  color: var(--color-title);
+  text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
 .theme_light .section__title {
@@ -55,7 +57,7 @@
 @media (width < 1024px) {
 
   .theme_light .title {
-    text-shadow: 4px 4px 0 #ff8dcb;
+    text-shadow: 4px 4px 0 var(--text-color);
   }
 }
 
@@ -79,7 +81,7 @@
   }
 
   .theme_auto .header__theme-menu-button:hover {
-    border-color: rgba(50 49 45 / 0.4);
+    border-color:var(--color-bord);
   }
 
   .theme_auto .header__theme-menu-button:focus-visible {
@@ -96,14 +98,14 @@
   }
 
   .theme_auto .title {
-    color: #ffc2e6;
-    text-shadow: 4px 4px 0 #ff0070;
+    color: var(--color-title);
+    text-shadow: 4px 4px 0 var(--shadow-color);
   }
 
   @media (width < 1024px) {
 
     .theme_auto .title {
-      text-shadow: 4px 4px 0 #ff8dcb;
+      text-shadow: 4px 4px 0 var(--text-color);
     }
   }
 

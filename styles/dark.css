@@ -7,11 +7,11 @@
 .theme_dark {
   --accent-color: #f1b2ce;
   --text-color: #ff0070;
+  --bg-color: #000028;
 }
 
 .page.theme_dark {
   background-image: url(../images/cover-image-dark.png);
-  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   /* сохраните этот селектор в приведённом виде.
@@ -21,7 +21,7 @@
 }
 
 .theme_dark .header__text {
-  color: #000028;
+  color: var(--bg-color);
   background-color: var(--text-color);
 }
 
@@ -37,7 +37,7 @@
   }
 
   .theme_auto .header__text {
-    color: #000028;
+    color: var(--bg-color);
     background-color: var(--text-color);
   }
 }
