@@ -253,13 +253,13 @@
 
   .header {
     padding: 20px;
-    grid-template-rows: minmax(43vh, auto) 43vh;
     margin-block-end: 60px;
     min-block-size: 1024px;
+    grid-template-rows: 43vh auto 43vh;
   }
 
   .title {
-    font-size: min(max(7.5rem, 0.5625rem + 14.4531vw), 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header .title {
@@ -273,7 +273,7 @@
 }
 
 @media (width >= 1024px) {
-
+  
   .header {
     grid-template-rows: 39vh auto 39vh;
     min-block-size: 768px;
@@ -302,7 +302,7 @@
   .why,
   .what,
   .how {
-    grid-template-columns: 32.5% auto;
+    grid-template-columns: 32% auto;
   }
 
   .what .section-content__list {
@@ -351,14 +351,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+  
 }
 
-@media (width >= 768px) {
 
-  .footer {
-    margin-block-start: 60px;
-  }
-}
 
 /*footer start*/
 .footer {
@@ -371,6 +367,13 @@
   margin-block-start: 40px;
 }
 /*footer end*/
+
+@media (width >= 768px) {
+
+  .footer {
+    margin-block-start: 60px;
+  }
+}
 
 /*первый опыт, не совсем удачный, оттуда черпал вдохновение*/
 
