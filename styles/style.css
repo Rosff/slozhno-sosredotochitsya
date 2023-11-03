@@ -1,12 +1,3 @@
-/*Никита,рад Вас снова видеть,не виделись со времен первого проекта,отправляю на ревью,основные ошибки поправил, но у меня вознилка ошибка с <ul class="section-content__list">
-там есть gap,который нужнен, но когда я его включал, у меня секция что под ним при масштабе 1024*768 уезжала вниз https://skr.sh/sManHCuAwQt(ссылка на скрин), я нашел 2 способа решение
-этой пробемы,первый перед вами в медиа запрос при масштабе 1024 я изменил калькуляцию,но при этом боковой отспуп у всех странице чуть ниже,чем в макете,где-то на 2-3 пикселя.
-Второй способ решения проблемы .section__title-how {margin-block-end: 20px;} я убирал это значние,но тогда (случалось так https://skr.sh/sMaHuvytO3z), но при этом все идеально вставало)
-Если вы покажете мои ошибки в этом вопросе, и как можно сделать иначе, буду благодарен.
-Эта работа меня порядочно выматала.
-Прошу не рассчитывать мой комментарий как просьба к вам, т.к. правилами обозначено,что нельзя в работе писать обращение, это как признание в инвалидности и желание в пути исправления, 
-посредством наставления на путь истинный.
-большое спасибо)
 
 
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
@@ -41,6 +32,7 @@
   display: grid;
   grid-template-rows: 33.5vh 30vh auto;
   position: relative;
+  height: 100vh;
 }
 
 .header__theme-menu {
@@ -304,7 +296,9 @@
   }
 
   .header__text{
-    font-size:17px;
+    font-size:18px;
+    max-width: 491px;
+    max-height: 71px;
   }
   
 }
@@ -373,7 +367,6 @@
   .footer {
     margin-block-start: 50px;
   }
-  
 }
 
 
@@ -387,6 +380,7 @@
   block-size: 100vh;
   position: relative;
   margin-block-start: 40px;
+  height: 100vh;
 }
 /*footer end*/
 
@@ -560,7 +554,7 @@
 
 .header_title{
   color: var(--bg-color);
-  font-family: var(--main-text), sans-serif;
+  
   font-size: 18px;
   font-style: normal;
   font-weight: 700
@@ -573,7 +567,7 @@
 .header_focus{
   color: #DB00FF;
   text-shadow: 4px 4px 0px #FF0070;
-  font-family: var(--main-text), sans-serif;
+  
   font-size: 116px;
   font-style: normal;
   font-weight: 700;
@@ -669,7 +663,7 @@
 
 .heading{
   color: var(--text-color-title);
-  font-family: var(--main-text), sans-serif;
+  
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -678,7 +672,7 @@
 
 .more_heading{
   color:var(--color-heading);
-  font-family: var(--main-text), sans-serif;
+  
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -690,7 +684,7 @@
 
 .more_text{
   color: var(--color-heading);
-  font-family: var(--main-text), sans-serif;
+  
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

@@ -66,6 +66,10 @@
   :root {
     --accent-color: #353430;
     --text-color: #ff8dcb;
+    --color-title:#FFC2E6;
+    --shadow-color:#FF0070;
+    --color-bord:rgba(50 49 45 / 0.4);
+
   }
 
   .page.theme_auto {
@@ -76,6 +80,9 @@
     display: none;
   }
 
+  .theme_auto .header__text{
+    color:var(--accent-color);
+  }
   .theme_auto .header__theme-menu-button {
     color: var(--accent-color);
   }
@@ -101,15 +108,22 @@
     color: var(--color-title);
     text-shadow: 4px 4px 0 var(--shadow-color);
   }
-
-  @media (width < 1024px) {
-
-    .theme_auto .title {
-      text-shadow: 4px 4px 0 var(--text-color);
-    }
+  .theme_auto .cards__title{
+    color: var(--accent-color)
   }
-
   .theme_auto .section__title {
     color: var(--accent-color);
+  }
+  .theme_auto .section__text{
+    color: var(--accent-color)
+  }
+  .theme_auto .article__title{
+    color: var(--accent-color)
+  }
+@media (width < 1024px) {
+
+  .theme_auto .title {
+    text-shadow: 4px 4px 0 var(--shadow-color);
+    }
   }
 }
