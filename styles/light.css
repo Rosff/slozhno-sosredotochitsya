@@ -24,6 +24,22 @@
   display: none;
 }
 
+.theme_light .header__text{
+  color: var(--accent-color);
+}
+
+.theme_light .article__title{
+  color:var(--accent-color);
+}
+
+.theme_light .section__text{
+  color:var(--accent-color);
+}
+
+.theme_light .cards__title{
+  color:var(--accent-color);
+}
+
 .theme_light .header__theme-menu-button {
   color: var(--accent-color);
 }
@@ -123,7 +139,7 @@
 @media (width < 1024px) {
 
   .theme_auto .title {
-    text-shadow: 4px 4px 0 var(--shadow-color);
+    text-shadow: 4px 4px 0 var(--text-color);
     }
   }
 }
